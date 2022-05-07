@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { core } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { API_CONFIG } from '../config/api.config';
@@ -13,6 +14,10 @@ export class ChamadoService {
 
   findAll(): Observable<Chamado[]> {
     return this.http.get<Chamado[]>(`${API_CONFIG.baseUrl}/chamados`);
+  }
+
+  create(chamado: Chamado): Observable<Chamado> {
+    return this.http.post<Chamado>(`${API_CONFIG.baseUrl}/chamados`, chamado)
   }
 
 }
