@@ -1,9 +1,33 @@
 .card {
     width: 90%;
     margin: 1rem auto;
-    background-color: rgb(235, 235, 235);
+    background-color: rgba(235, 221, 221, 0.479);
  }
  
  img {
     height: 20rem;
+ }
+
+ p {
+    text-align: center;
+   font-weight: 900;
+    font-family: Andale Mono, monospace	
+ }
+
+ .mat-card-title {
+    font-size: 3rem;    
+   
+ }
+
+ .mat-card-subtitle {
+    padding-top: 25%;
+    font-size: 3rem;
+    text-align: center;
+ }
+
+ .mat-card-title {
+    padding-top: 10%;
+    padding-left: 2%;
+    color: rgba(0, 26, 6, 0.87);
+     justify-content: center;
  }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AuthGuard } from './auth/auth.guard';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,6 +25,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+
+
 
 // componentes do projeto
 import { NavComponent } from './components/nav/nav.component';
@@ -66,7 +69,8 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
     ChamadoListComponent,
     ChamadoCreateComponent,
     ChamadoUpdateComponent,
-    ChamadoReadComponent,
+    ChamadoReadComponent,  
+      
   ],
   imports: [
     BrowserModule,
@@ -91,7 +95,8 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule,
+    MatCardModule, 
+    MatSlideToggleModule,
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
